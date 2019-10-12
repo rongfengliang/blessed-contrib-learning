@@ -15,6 +15,10 @@
     ]
   },
   "scripts": {
-    "app": "node index"
+    "app": "node index",
+	"pkg": "pkg ."
+  },
+  "devDependencies": {
+    "pkg": "^4.4.0"
   }
 }

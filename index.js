@@ -1,4 +1,3 @@
-require("dotenv").config();
 var blessed = require('blessed'),
     contrib = require('blessed-contrib'),
     screen = blessed.screen({fullUnicode:true}),
@@ -10,7 +9,7 @@ var blessed = require('blessed'),
         },
         xLabelPadding: 3,
         xPadding: 5,
-        label: process.env.APPNAME
+        label: "dddddd"
     }),
     data = {
         x: ['t1', 't2', 't3', 't4'],
@@ -35,7 +34,7 @@ screen.key(['escape', 'q', 'C-c'], function (ch, key) {
     return process.exit(0);
 });
 
-screen.render()
+// screen.render()
 screen.on('resize', function () {
     line.emit('attach');
 });
